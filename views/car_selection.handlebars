@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <!--Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->  
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Bookmytrip</title>
+    <link rel="icon" href="Images/title.png" type="image/png">
+    <style>
+        body{
+            background: url(Images/paxel1.jpg);
+            background-repeat: repeat-y;
+        }
+        .c1{
+            cursor: pointer;
+        }
+        #tc{
+            margin-right: 15em;
+        }
+        #bmc{
+            position: absolute;
+            left: 8em;
+        }
+        #logo{
+            margin-left: 8em;
+        }
+        @media (max-width: 800px){
+            #tc{
+                margin-right: 0;
+            }
+            #logo{
+                margin-left: 1em;
+            }
+            #bmc{
+                left: 3.5em;
+            }
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $('#tnc').hide();
+            $('#trm').click(function(){
+                $('#tnc').slideToggle(500);
+            })
+        })
+    </script>
+</head>
+<body>
+    <!--Navbar-->
+    <div class="hoverable navbar-fixed">
+        <nav class="teal">
+            <div class="container-fluid">
+                <div class="center nav-wrapper">
+                    <ul class="center" >
+                        <li id="logo">
+                              <img height="60px" width="60px" src="Images/trip.png" alt="Logo"> 
+                        </li>
+                        <li>
+                            <a href="/"> <h5 id="bmc"><span class="black-text">Book</span>MyCar</h5></a>
+                        </li>
+                    </ul>
+                    <ul id="tc" class="right">
+                        <li>
+                            <a href="#" id="trm" class="btn">TERMS & CONDITIONS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+      </div>
+
+
+      <!--After navbar-->
+      <div class="hoverable container" style=" margin-top: 2em; white;">
+          <div class="row">
+              <div class="col s4">
+                  <i class="material-icons">verified_user</i>
+                  <span style="font-size: 1.5em;">VERIFIED DRIVERS & CARS</span>
+              </div>
+              <div class="col s4 center">
+                  <i class="material-icons">wifi</i>
+                  <span style="font-size: 1.5em;">FREE WIFI</span>
+              </div>
+              <div class="col s4 right">
+                  <i class="material-icons">call</i>
+                  <span style="font-size: 1.5em;">CUSTOMER SUPPORT</span>
+              </div>
+          </div>
+      </div>
+
+
+
+    <!--Terms and condition-->
+    <div id="tnc" class="container">
+        <h1>Terms & Conditions</h1>
+        <p>These Terms and Conditions of Use apply to the BookMyCar website. By using our Website and services
+             you agree and accept these Terms and Conditions.</p>
+        <h4>1. Pricing, Hourly rates & wedding bookings</h4>
+        <p>The pricing for myCar chauffeur services with our Teslas and Lexus Hybrid are calculated by the “Instant Quote” feature 
+            of our website. Please note if a journey starts and terminates 30km’s a0 surcharge may apply.</p>
+        <p>The hourly rates for BookMyCar vehicles require a 2 hour minimum booking per vehicle, hourly vehicle rates are as follows: 
+            Mitsubishi Outlander PHEV 6000 per hour, Lexus 7000 Hybrid 8000 per hour, Tesla Model S 8500 per hour, Tesla Model X
+             12500 per hour.</p>
+        <p>Weddings bookings require a 3 hour minimum booking per vehicle. Prices are charged at 15000 per hour for Tesla Model S & 
+            Lexus 20000 Hybrid. 20000 per hour for Tesla Model X. Price includes immaculate detailing, reserving your chosen vehicle/s,
+             ribbon and Tulle, and any personal requirements in addition to our usual chauffeur service (e.g. Red carpet, Spotify, 
+             complimentary glass bottled water).</p>
+        <h4>2. Booking confirmation</h4>
+        <p>Your booking will not be confirmed until you receive a booking confirmation. Please ensure you check all the details of this
+             confirmation and contact us if anything is incorrect or if you haven’t received your booking confirmation. BookMyCar will not 
+             be held liable for any loss incurred due to incorrect information being provided at the time of booking or insufficient
+              travel time being allocated by the customer that may result in, but is not limited to the reorganisation of travel.</p>
+        <h4>3. Vehicle damage</h4>
+        <p>In the event that a member or their guest damages, soils or vomits on the interior or exterior of any myCar vehicle, the
+             member will be required to pay all costs required to restore the vehicle to its pre-hire condition. These costs include,
+              but are not limited to, cleaning, repair, detailing and loss of income if our vehicle has been put out of service. Due to 
+              the potential to damage our expensive vehicles, membership may be revoked at the discretion of the company and a minimum 
+              soiling charge applies of 3500.</p>
+        <h4>4. Inappropriate behaviour</h4>
+        <p>In the event that a member or their guest are behaving in a manner that is anti-social or poses a threat to their own safety, 
+            the safety of other passengers or that of the chauffeur, their service can be terminated immediately without a refund and a 
+            police report may be submitted if necessary. It is illegal to stand through the sunroof and therefore the driver reserves the
+             right to terminate the transfer immediately.</p>
+        <h4>5. Seatbelts</h4>
+        <p>In accordance with Australian law, passengers must wear seatbelts when the vehicle is in motion. If the customer or members of
+             the customer’s party fail to correctly wear a seatbelt, the member who booked the service will be held liable. The member
+              may have their membership revoked. Vehicles cannot be loaded beyond seating capacity and baggage must be stowed only in 
+              the rear luggage compartment.</p>
+        <h4>6. Account cancellation </h4>
+        <p>You are solely responsible for the cancellation of your membership and account. You can cancel your account at any time via
+             email to sarangchoudhary1996@gmail.com. Failure to pay your account will result in your account being terminated. We are not
+              responsible for any loss you suffer as a result of such termination. The member is liable for all costs, including legal 
+              and management time incurred in recovering any unpaid amounts and a penalty interest rate of 2% per week cumulative will 
+              apply to any late payments. myCar in its sole discretion may terminate your account and refuse any and all current or 
+              future use of the service, for any reason, at any such time. Such termination can result in the deactivation or deletion
+               of your account. myCar reserves the right to refuse service to anyone for any reason at any time or to cancel a membership 
+               count.</p>
+     </div>
+
+      <!--car selection-->
+      <div class="container">
+          <div class="row">
+              <div class="col s12">
+                    <h3>Book a Car</h3><br><br>
+              </div>
+              {{#each rows as |rows|}}
+              <div style="cursor: default" class="c1 col m4 hoverable">
+                    <div class="card">
+                        <div class="card-image">
+                           <img src='{{rows.image_location}}' alt="Image">
+                        </div>
+                    <div class="card-content lighten-2 grey">
+                        <form action="/car_selection" method="POST">
+                            <input style=" border: 0; color:black; font-size: 2em; margin-top: -0.8em;" readonly="true" value=
+                            "{{rows.name_of_cars}}" type="text" name="carname">
+                            <button class="waves-effect waves-red btn red right pulse">
+                                <a class="white-text">Book Now<i class="material-icons right pulse">send</i></a>
+                            </button>
+                            <span style="margin-top: -1em; margin-bottom: -1em; font-size: 2em" class="right-align">{{rows.price}}> inc. of tax</strong></span>
+                            
+                        </form>
+                    </div>
+                </div>
+             </div>
+             {{/each}}
+             </div>
+        </div>
+ <!--Footer-->
+           <footer class="section teal darken-2 white-text center">
+                <p class="flow-text"> <span class="black-text">Book</span>MyCar &copy; 2018</p>
+            </footer>
